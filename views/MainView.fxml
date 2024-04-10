@@ -16,11 +16,11 @@
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
                <children>
                   <Label text="First Num" />
-                  <TextField fx:id="numOneTextField" alignment="CENTER" prefHeight="76.0" prefWidth="102.0" />
+                  <TextField id="numOneTextBox" fx:id="numOneTextField" alignment="CENTER" prefHeight="76.0" prefWidth="102.0" />
                   <Label text="SecondNum" />
-                  <TextField fx:id="numTwoTextField" alignment="CENTER" prefHeight="76.0" prefWidth="102.0" />
+                  <TextField id="numTwoTextBox" fx:id="numTwoTextField" alignment="CENTER" prefHeight="76.0" prefWidth="102.0" />
                   <Label text="RESULT:" />
-                  <Label fx:id="resultTextField" text="100" />
+                  <Label id="resultLabelBox" fx:id="resultTextField" text="100" />
                </children>
                <padding>
                   <Insets left="50.0" right="50.0" />
@@ -28,10 +28,10 @@
             </HBox>
             <TilePane hgap="250.0" prefHeight="200.0" prefWidth="200.0" vgap="50.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#onClickAdd" prefHeight="76.0" prefWidth="108.0" text="+" />
-                  <Button mnemonicParsing="false" onAction="#onClickSubtract" prefHeight="76.0" prefWidth="108.0" text="-" />
-                  <Button mnemonicParsing="false" onAction="#onClickDivide" prefHeight="76.0" prefWidth="108.0" text="/" />
-                  <Button mnemonicParsing="false" onAction="#onClickMultiply" prefHeight="76.0" prefWidth="108.0" text="*" />
+                  <Button id="addButton" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="76.0" prefWidth="108.0" text="+" />
+                  <Button id="subtractButton" mnemonicParsing="false" onAction="#onClickSubtract" prefHeight="76.0" prefWidth="108.0" text="-" />
+                  <Button id="divideButton" mnemonicParsing="false" onAction="#onClickDivide" prefHeight="76.0" prefWidth="108.0" text="/" />
+                  <Button id="multiplyButton" mnemonicParsing="false" onAction="#onClickMultiply" prefHeight="76.0" prefWidth="108.0" text="*" />
                </children>
                <padding>
                   <Insets left="50.0" />

@@ -30,34 +30,40 @@ public class MainController
 					model.getNumTwo(), fmt);
 			Bindings.bindBidirectional(resultTextField.textProperty(),
 					model.getResult(), fmt);
+	    	numOneTextField.textProperty().set("");
+	    	numTwoTextField.textProperty().set("");
 		}
 	
 	    @FXML
 	    void onClickAdd(ActionEvent event) 
 	    {
 	    	model.add();
-	    	System.out.println("Clicked Add");
+	    	numOneTextField.textProperty().set("");
+	    	numTwoTextField.textProperty().set("");
 	    }
 
 	    @FXML
 	    void onClickSubtract(ActionEvent event) 
 	    {
 	    	model.subtract();
-	    	System.out.println("Clicked Subtract");
+	    	numOneTextField.textProperty().set("");
+	    	numTwoTextField.textProperty().set("");
 	    }
 	    
 	    @FXML
 	    void onClickMultiply(ActionEvent event) 
 	    {
 	    	model.multiply();
-	    	System.out.println("Clicked Multiply");
+	    	numOneTextField.textProperty().set("");
+	    	numTwoTextField.textProperty().set("");
 	    }
 	    
 	    @FXML
 	    void onClickDivide(ActionEvent event) 
 	    {
 	    	model.divide();
-	    	System.out.println("Clicked Divide");
+	    	numOneTextField.textProperty().set("");
+	    	numTwoTextField.textProperty().set("");
 	    }
 	    
 
